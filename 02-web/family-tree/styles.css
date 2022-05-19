@@ -48,3 +48,8 @@ h6 {
 #p-ul {
   list-style-type: none;
 }
+
+span {
+  font-size: 1.5em;
+  color: pink;
+}
