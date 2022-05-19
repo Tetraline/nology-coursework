@@ -5,6 +5,18 @@
   /* sans-serif is more modern looking */
 }
 
+*::selection {
+  color: pink;
+  background-color: black;
+}
+
+*:hover {
+  color: green;
+}
+img:hover {
+  filter: invert(1);
+}
+
 body {
   background-color: white;
   max-width: 1400px;
@@ -52,4 +64,10 @@ h6 {
 span {
   font-size: 1.5em;
   color: pink;
+}
+
+h1::before {
+  content: "👑";
+  color: red;
+  font-size: 60px;
 }
