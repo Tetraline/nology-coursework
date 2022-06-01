@@ -16,6 +16,9 @@
 img:hover {
   filter: invert(1);
 }
+.card:hover {
+  background-color: grey;
+}
 
 body {
   background-color: white;
@@ -40,6 +43,11 @@ header {
   background-color: white;
   color: midnightblue;
   box-shadow: 5px 5px 5px 5px lightgray;
+  transition: 0.3s;
+}
+
+li:hover {
+  color: blueviolet;
 }
 
 .card img {
