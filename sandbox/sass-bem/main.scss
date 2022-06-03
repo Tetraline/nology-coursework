@@ -1,0 +1,85 @@
+
+// This scss file demonstrates 
+// 1. Variables
+// 2. Importing
+// 3. Nesting
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+
+// It is best to group all your variables together, and then subgroup fonts, colours, etc.
+$font-body: "Roboto", sans-serif;
+$font-display: "Dancing Script", cursive;
+
+$color-primary: #28527a;
+$color-secondary: #f0a500;
+$color-black: #333333;
+$color-white: #fafafa;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+    color: $color-black;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+nav{
+    height: 10vh;
+    background-color: $color-primary;
+    padding: 0 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: $font-display;
+    color: $color-white;
+    font-size: 20px;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    background-color: $color-secondary;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: $color-white;
+}
+
+// Demonstration of nesting:
+header{
+    // border: 2px solid red
+    // Use borders to see what you are working on
+    
+    height: 90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        text-align: center;
+        
+        h1 {
+            color: $color-primary;
+            font-size: 50px;
+        }
+
+        h2 {
+            font-family: $font-display;
+            font-size: 25px;
+            margin: 20px 0;
+        }
+
+        a {
+            margin: 0 auto;
+        }
+    }
+}
